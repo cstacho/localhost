@@ -1,0 +1,47 @@
+<section class="searchbar">
+  <div class="container">
+          <h1>What would you usually search for on Amazon right now?</h1>
+          <input class="search" id="myInput" type="text" onkeyup="myFunction()" placeholder="Search..">
+  </div>
+</section>
+
+<section class="businesses" id="businesses">
+<h1 id="r"></h1>
+<ul id="myUL">
+  {{#each business}}
+  <li><p> <a href="">{{this.name}}</a> Sells {{this.items}}</p></li>
+  <br>
+  {{/each}}
+</ul>
+</section>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, p, i, txtValue;
+    result = document.getElementById("r").innerHTML="";
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+
+    var count = 0;
+    for (i = 0; i < li.length; i++) {
+        p = li[i].getElementsByTagName("p")[0];
+        txtValue = p.textContent || p.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            count = count + 1;
+            li[i].style.display = "none";
+        }
+    }
+
+
+    if (count >= li.length){
+    result = document.getElementById("r").innerHTML="Sorry, no results matched that. :( ";
+    }
+
+
+}
+</script>

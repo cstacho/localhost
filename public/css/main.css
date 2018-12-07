@@ -1,0 +1,148 @@
+/* Please add your own! */
+body {
+  background-color: #B9D6F2;
+}
+body {
+  margin: 0;
+  font-size: 18px;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  margin:0;
+  font-weight:bold;
+}
+
+a {
+  padding: 10px 10px;
+}
+a:hover {
+  background-color: white;
+
+}
+.row {
+  display: flex;
+}
+section.searchbar {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding-top:40px;
+
+}
+
+section.searchbar h1 {
+  font-size: 50px;
+  max-width: 80%;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+}
+.formtext{
+  border-radius: 50px;
+  height:20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  display: block;
+  padding:4px 2px;
+  border:solid 1px #aacfe4;
+  width:500px;
+  margin:2px 0 20px 10px;
+}
+
+
+.submit {
+  margin-left:120px;
+  height:50px;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  padding:4px 2px;
+  border:solid 1px #aacfe4;
+  border-radius:50px;
+  width:500px;
+}
+
+.addstore {
+  border-radius: 50px;
+  height:20px;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin-bottom:70px;
+}
+.search {
+    border-radius: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: ease all .3s;
+    border:solid 1px #aacfe4;
+}
+
+section .container {
+  width: 1200px;
+  max-width: 90%;
+  margin:auto auto;
+}
+.nav {
+  padding: 20px 0px ;
+  position: relative;
+  width: 100%;
+}
+
+.column {
+  padding: 0px 15px;
+}
+section.padded {
+  padding-top:80px;
+  padding-bottom:80px;
+}
+section.navbar a {
+  border-radius: 50px;
+  font-weight:bold;
+  color:black;
+  text-decoration:none;
+  padding:12px;
+}
+h1 {
+  display: "none";
+}
+section.navbar .links a {
+  color: #D7DAE5;
+  opacity: .4;
+}
+
+section.navbar .links {
+  opacity: 1;
+}
+label {
+  float:left;
+  text-align:right;
+  margin-right:15px;
+  width:100px;
+}
+/* input {
+    display: block;
+    font-size:11px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:500px;
+    margin:2px 0 20px 10px;
+} */
+
+section.businesses {
+  width: 100%;
+  height: 50vh;
+  display: block;
+  align-items: center;
+  padding: 12px 24px;
+}
